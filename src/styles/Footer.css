@@ -1,0 +1,22 @@
+.footer {
+  background-color: #efeff5; 
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.footer-cities {
+  margin-bottom: 10px;
+}
+
+.city {
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #555;
+}
