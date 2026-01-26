@@ -4,12 +4,23 @@ import TodoItem from '../components/TodoItem';
 
 function Todos() {
   const [todos, setTodos] = useState([
+    // Rome
     { id: 1, text: 'Arrive at Fiumicino Airport', completed: false },
     { id: 2, text: 'Leonardo Express to city center', completed: false },
     { id: 3, text: 'Visit Spanish Steps', completed: false },
     { id: 4, text: 'Throw a coin in Trevi Fountain', completed: false },
-    { id: 5, text: 'Dinner in Trastevere', completed: false }
+    { id: 5, text: 'Dinner in Trastevere', completed: false },
+
+    // Florence
+    { id: 6, text: 'Explore Florence Duomo', completed: false },
+    { id: 7, text: 'Walk across Ponte Vecchio', completed: false },
+    { id: 8, text: 'Visit Uffizi Gallery', completed: false },
+
+    // Venice
+    { id: 9, text: 'Ride a gondola in Venice', completed: false },
+    { id: 10, text: 'Visit Piazza San Marco', completed: false }
   ]);
+
 
   const [newTodo, setNewTodo] = useState('');
   const [filter, setFilter] = useState('all');
