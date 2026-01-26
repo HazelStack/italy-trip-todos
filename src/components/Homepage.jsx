@@ -1,5 +1,6 @@
 import React from "react";
-import '../styles/Homepage.css';
+import ControlledCarousel from "../components/ControlledCarousel";
+import "../styles/Homepage.css";
 
 const Homepage = () => {
   return (
@@ -9,6 +10,11 @@ const Homepage = () => {
         <h1>Italy Trip Todos</h1>
         <p>Plan your Italian adventure, one to-do at a time!</p>
       </header>
+
+      {/* Carousel Section */}
+      <section className="homepage-carousel">
+        <ControlledCarousel />
+      </section>
 
       {/* Features / Highlights */}
       <section className="homepage-features">
