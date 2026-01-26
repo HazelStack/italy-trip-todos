@@ -5,8 +5,6 @@ import Todos from './pages/Todos';
 import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
 function App() {
   return (
     <Router>
