@@ -25,18 +25,6 @@ const Homepage = () => {
           <li>Simple, clean, and mobile-friendly design</li>
         </ul>
       </section>
-
-      {/* Example Preview */}
-      <section className="homepage-preview">
-        <h2>Sample Itinerary</h2>
-        <div className="todo-preview">
-          <ul>
-            <li>Day 1: Explore Colosseum and Roman Forum 🏛️</li>
-            <li>Day 2: Gondola ride in Venice 🚤</li>
-            <li>Day 3: Wine tasting in Tuscany 🍷</li>
-          </ul>
-        </div>
-      </section>
     </div>
   );
 };
