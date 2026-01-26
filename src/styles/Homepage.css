@@ -1,0 +1,36 @@
+.homepage {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.homepage-hero {
+  margin-top: 2rem;
+}
+
+.homepage-hero h1 {
+  color: #910c17;
+  font-size: 2.5rem;
+}
+
+.homepage-hero p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.homepage-features,
+.homepage-preview {
+  margin-top: 3rem;
+}
+
+.homepage-features ul,
+.homepage-preview ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.homepage-features li,
+.homepage-preview li {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+}

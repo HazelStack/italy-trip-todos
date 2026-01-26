@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import BootstrapNavBar from './components/NavBar'
 import Todos from './pages/Todos';
 import Contact from './pages/Contact';
+import Homepage from './components/Homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      <BootstrapNavBar/>
       <Routes>
+        <Route path="/" element={<Homepage />} />  
         <Route path="/todos" element={<Todos />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
@@ -18,4 +20,5 @@ function App() {
 }
 
 export default App;
+
 
