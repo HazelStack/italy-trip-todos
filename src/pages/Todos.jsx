@@ -66,69 +66,79 @@ function Todos() {
 
   return (
     <div className="p-4">
-      <h2>Italy Trip Todos</h2>
+      <h2 className="mb-4">Italy Trip Todos</h2>
 
-      {/* Add Todo Form */}
-      <Form onSubmit={handleAddTodo} className="mb-3">
-        <Form.Control
-          type="text"
-          placeholder="Add a new Italy trip task..."
-          value={newTodo}
-          onChange={(e) => setNewTodo(e.target.value)}
-        />
-        <Button type="submit" className="mt-2">
-          Add Todo
-        </Button>
-      </Form>
+      <div className="row">
+        {/* LEFT COLUMN — Add Todo */}
+        <div className="col-md-4">
+          <h5>Add New Todo</h5>
 
-      {/* Filter Buttons */}
-      <div className="mb-3">
-        <Button
-          variant={filter === 'all' ? 'primary' : 'outline-primary'}
-          onClick={() => setFilter('all')}
-          className="me-2"
-        >
-          All
-        </Button>
-
-        <Button
-          variant={filter === 'completed' ? 'primary' : 'outline-primary'}
-          onClick={() => setFilter('completed')}
-          className="me-2"
-        >
-          Completed
-        </Button>
-
-        <Button
-          variant={filter === 'incomplete' ? 'primary' : 'outline-primary'}
-          onClick={() => setFilter('incomplete')}
-        >
-          Incomplete
-        </Button>
-      </div>
-
-      {/* Todo Table */}
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Task</th>
-            <th>Completed</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredTodos.map((todo, index) => (
-            <TodoItem
-              key={todo.id}
-              todo={todo}
-              index={index}
-              onToggle={toggleTodo}
-              onDelete={deleteTodo}
+          <Form onSubmit={handleAddTodo}>
+            <Form.Control
+              type="text"
+              placeholder="Add a new Italy trip task..."
+              value={newTodo}
+              onChange={(e) => setNewTodo(e.target.value)}
+              className="mb-2"
             />
-          ))}
-        </tbody>
-      </Table>
+            <Button type="submit">Add Todo</Button>
+          </Form>
+
+          {/* Filter Buttons */}
+          <div className="mt-4">
+            <h6>Filter</h6>
+
+            <Button
+              variant={filter === 'all' ? 'primary' : 'outline-primary'}
+              onClick={() => setFilter('all')}
+              className="me-2 mb-2"
+            >
+              All
+            </Button>
+
+            <Button
+              variant={filter === 'completed' ? 'primary' : 'outline-primary'}
+              onClick={() => setFilter('completed')}
+              className="me-2 mb-2"
+            >
+              Completed
+            </Button>
+
+            <Button
+              variant={filter === 'incomplete' ? 'primary' : 'outline-primary'}
+              onClick={() => setFilter('incomplete')}
+              className="mb-2"
+            >
+              Incomplete
+            </Button>
+          </div>
+        </div>
+
+        {/* RIGHT COLUMN — Todo List */}
+        <div className="col-md-8">
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Task</th>
+                <th>Completed</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredTodos.map((todo, index) => (
+                <TodoItem
+                  key={todo.id}
+                  todo={todo}
+                  index={index}
+                  onToggle={toggleTodo}
+                  onDelete={deleteTodo}
+                />
+              ))}
+            </tbody>
+          </Table>
+        </div>
+      </div>
     </div>
   );
 }
