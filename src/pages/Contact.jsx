@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../styles/Contact.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
+    setIsSubmitted(false); 
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -25,25 +27,21 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="contact-page"
-      style={{ maxWidth: "600px", margin: "0 auto", padding: "2rem" }}
-    >
-      <h2>Contact Us</h2>
-      <p>Have questions or feedback? Fill out the form below!</p>
+    <div className="contact-page">
+      <h2 className="contact-title">Contact Us</h2>
+      <p className="contact-description">
+        Have questions or feedback? Fill out the form below!
+      </p>
 
       {isSubmitted && (
-        <p style={{ color: "green", marginBottom: "1rem" }}>
+        <p className="success-message">
           Thanks for reaching out! I’ll get back to you soon 😊
         </p>
       )}
 
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
-      >
-        <label>
-          Name:
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <label className="contact-label">
+          Name
           <input
             type="text"
             name="name"
@@ -54,8 +52,8 @@ const Contact = () => {
           />
         </label>
 
-        <label>
-          Email:
+        <label className="contact-label">
+          Email
           <input
             type="email"
             name="email"
@@ -66,8 +64,8 @@ const Contact = () => {
           />
         </label>
 
-        <label>
-          Message:
+        <label className="contact-label">
+          Message
           <textarea
             name="message"
             value={formData.message}
@@ -78,7 +76,7 @@ const Contact = () => {
           />
         </label>
 
-        <button type="submit" style={{ padding: "0.5rem 1rem", cursor: "pointer" }}>
+        <button type="submit" className="submit-btn">
           Send Message
         </button>
       </form>
