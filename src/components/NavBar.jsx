@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function BootstrapNavBar() {
   return (
-    <Navbar bg="light" data-bs-theme="light">
+    <Navbar bg= "light" data-bs-theme="light">
       <Container>
         <Navbar.Brand as={NavLink} to="/">
           Italy Trip Todos
