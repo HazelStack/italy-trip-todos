@@ -73,9 +73,17 @@
 
 ## Screenshots
 
-## Ideas for Future Improvement
-1. 
-2.
-3.
+### Home Page - Desktop Version
+![Home Page Desktop](./images/Home-Desktop.jpg)
+### Todo Page - Desktop Version
+![Todo Page Desktop](./images/Todo-Desktop.jpg)
+### Contact Page - Mobile Version
+![Contact Mobile](./images/Contact-Mobile.jpg)
+
+## 💡Ideas for Future Improvement
+
+1. Filter tasks by city for focused itinerary planning.  
+2. Drag-and-drop to reorder tasks for flexible scheduling.  
+3. Export itineraries to PDF for easy sharing or printing.
 
 ## Developer: [Hazel Arevalo](https://linkedin.com/in/harevalo123)
