@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/italy-trip-todos/static/css/main.08a33502.css",
+    "main.js": "/italy-trip-todos/static/js/main.96d766ce.js",
+    "static/js/453.d1ea44ad.chunk.js": "/italy-trip-todos/static/js/453.d1ea44ad.chunk.js",
+    "index.html": "/italy-trip-todos/index.html",
+    "main.08a33502.css.map": "/italy-trip-todos/static/css/main.08a33502.css.map",
+    "main.96d766ce.js.map": "/italy-trip-todos/static/js/main.96d766ce.js.map",
+    "453.d1ea44ad.chunk.js.map": "/italy-trip-todos/static/js/453.d1ea44ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08a33502.css",
+    "static/js/main.96d766ce.js"
+  ]
+}
