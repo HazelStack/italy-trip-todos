@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Italy Trip Todos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Italy Trip Todos** is a React itinerary-style to-do app built to simplify travel planning. It allows users to create and organize trip itineraries, track must-see attractions, restaurants, and experiences, and stay organized throughout their journey. The app includes a responsive home page with a Bootstrap navbar and carousel, along with a contact page powered by EmailJS API integration that enables visitors to reach me directly via email.
 
-## Available Scripts
+## How to Use
 
-In the project directory, you can run:
+### 🏠 Home Page
+- Use the carousel controls to browse three images featuring Italy’s top attractions as a sample itinerary
+- Navigate between pages using the Bootstrap navbar at the top
 
-### `npm start`
+### 📝 To-Do Page
+- Explore a sample Italy itinerary with preloaded travel tasks
+- Click a task’s checkbox to mark it as complete  
+  - Completed tasks show a strike-through effect  
+  - Click the checkbox again to undo and mark the task as incomplete
+- Remove tasks from the list using the delete button
+- Filter tasks using the **All**, **Completed**, and **Incomplete** buttons
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 🖥️ Desktop Experience (To-Do Page)
+- Enjoy a side-by-side layout for easier planning:
+  - **Left panel:** Add new tasks and filter existing ones
+  - **Right panel:** View the itinerary (task list)
+- Designed to make managing longer itineraries simple and intuitive on larger screens
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📬 Contact Page
+- Fill out your **name**, **email**, and **message**
+- Click the **Send Message** button to submit the form
+- The EmailJS API securely sends your message directly to my personal email
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Travel-focused itinerary to-do lists
+- React + JSX with dynamic state management
+- Add, complete, undo, delete, and filter tasks
+- Filters: **All**, **Completed**, **Incomplete**
+- Responsive design for mobile and desktop
+- Desktop side-by-side layout for itinerary planning
+- React Bootstrap navbar, carousel, forms, and tables
+- Home page carousel showcasing Italy’s top attractions
+- Client-side routing with React Router (BrowserRouter)
+- Contact form with EmailJS API integration
+- Honeypot-based bot prevention
+- Component-based, reusable frontend architecture
 
-### `npm run build`
+## 🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- React / JSX  
+- React Router  
+- React Bootstrap  
+- EmailJS API  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Live Demo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
