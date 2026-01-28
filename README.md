@@ -53,6 +53,7 @@
 - EmailJS API  
 
 ## Live Demo:
+https://hazelstack.github.io/italy-trip-todos/
 
 ## 👤 User Stories
 
