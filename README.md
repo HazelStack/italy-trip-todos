@@ -54,4 +54,28 @@
 
 ## Live Demo:
 
+## 👤 User Stories
 
+1. **As a traveler**, I want to create and organize an itinerary-style to-do list so I can easily plan and track my trip to Italy.
+
+2. **As a planner using different devices**, I want the app to work seamlessly on both mobile and desktop so I can manage my itinerary wherever I am.
+
+3. **As a visitor to the site**, I want to contact the developer through a simple form so I can send questions or feedback directly via email.
+
+## Wireframes
+
+### Home Page - Desktop Version
+![Home Page Wireframe](./wireframes/Home-Desktop.drawio.svg)
+### Todo Page - Mobile Version
+![Todo Page Wireframe](./wireframes/Mobile-Todo.drawio.svg)
+### Contact Page - Mobile Version
+![Contact Page Wireframe](./wireframes/Mobile-Contact.drawio.svg)
+
+## Screenshots
+
+## Ideas for Future Improvement
+1. 
+2.
+3.
+
+## Developer: [Hazel Arevalo](https://linkedin.com/in/harevalo123)
